@@ -1,7 +1,4 @@
-/* .card-deck {
-    margin: 0 1.5rem;
-} */
-
+/* Needed to add a margin to the main */
 main {
     margin: 0 1.5rem;
 }

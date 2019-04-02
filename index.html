@@ -1,3 +1,5 @@
+<!-- Using Georgian College's Header and Footer, plus their css.
+     To see where the content is search "<main>" -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -593,7 +595,7 @@
 <section id="url-alerts-container" class="alerts-container" aria-label="Url Alerts"></section>
 </header>
 <!----------------------- Start of My Content -------------------------------->
-	<main aria-label="pageName">
+	<main aria-labelledby="pageName">
 		<section>
 			<h2 id="pageName">
 				404 - Page Was Not Found
@@ -604,66 +606,66 @@
 				Maybe these links will lead you where you want to go.
 			</p>
     </section>
-      <div class="card-deck">
-      <section class="card">
+    <div class="card-deck">
+      <section class="card" aria-labelledby="fullTimeTitle">
         <div class="card-body">
           <h3 class="card-title">
-            <a class="btn-lg btn-lp btn-block blue-back green-back-hover white-text" href="https://www.georgiancollege.ca/academics/full-time-programs/">Full-Time Programs</a>
+            <a id="fullTimeTitle" class="btn-lg btn-lp btn-block blue-back green-back-hover white-text" href="https://www.georgiancollege.ca/academics/full-time-programs/" role="link">Full-Time Programs</a>
           </h3>
           <div class="form-group row">
-            <label for="campusSelect" class="col-12">Programs By Campus:</label>
-            <select id="campusSelect" class="col-12">
-                <option value="" selected>Choose...</option>
-                <option value="barrie">Barrie</option>
-                <option value="midland">Midland</option>
-                <option value="muskoka">Muskoka</option>
-                <option value="orangeville">Orangeville</option>
-                <option value="orillia">Orillia</option>
-                <option value="owen%20sound">Owen Sound</option>
-                <option value="south%20georgian%20bay">South Georgian Bay</option>
+            <label id="campusLabel" for="campusSelect" class="col-12">Programs By Campus:</label>
+            <select id="campusSelect" class="col-12" role="menu" aria-labelledby="campusLabel" aria-expanded="false">
+                <option value="" selected aria-selected="true">Choose...</option>
+                <option value="barrie" aria-selected="false">Barrie</option>
+                <option value="midland" aria-selected="false">Midland</option>
+                <option value="muskoka" aria-selected="false">Muskoka</option>
+                <option value="orangeville" aria-selected="false">Orangeville</option>
+                <option value="orillia" aria-selected="false">Orillia</option>
+                <option value="owen%20sound" aria-selected="false">Owen Sound</option>
+                <option value="south%20georgian%20bay" aria-selected="false">South Georgian Bay</option>
             </select>
-            <button id="campusBtn" class="btn-lp green-back blue-back-hover white-text col-3">Find</button>
+            <button id="campusBtn" class="btn-lp green-back blue-back-hover white-text col-3" role="button" aria-pressed="false">Find</button>
           </div>
           <div class="form-group row">
-            <label for="areaSelect" class="col-12">Programs by Academic Area:</label>
-            <select id="areaSelect" class="col-12">
-                <option value="" selected>Choose...</option>
-                <option value="automotive-business">Automotive Business</option>
-                <option value="business-and-management">Business and Management</option>
-                <option value="community-safety">Community Safety</option>
-                <option value="computer-studies">Computer Studies</option>
-                <option value="design-and-visual-arts">Design and Visual Arts</option>
-                <option value="engineering-and-environmental-technologies">Eng. and Env. Technology</option>
-                <option value="health-wellness-and-sciences">Health, Wellness and Sciences</option>
-                <option value="hospitality-tourism-and-recreation">Hospitality, Tourism and Rec.</option>
-                <option value="human-services">Human Services</option>
-                <option value="indigenous-studies">Indigenous Studies</option>
-                <option value="liberal-arts">Liberal Arts</option>
-                <option value="marine-studies">Marine Studies</option>
-                <option value="skilled-trades">Skilled Trades</option>
+            <label id="areaLabel" for="areaSelect" class="col-12">Programs by Academic Area:</label>
+            <select id="areaSelect" class="col-12" role="menu" aria-labelledby="areaLabel" aria-expanded="false">
+                <option value="" selected aria-selected="true">Choose...</option>
+                <option value="automotive-business" aria-selected="false">Automotive Business</option>
+                <option value="business-and-management" aria-selected="false">Business and Management</option>
+                <option value="community-safety" aria-selected="false">Community Safety</option>
+                <option value="computer-studies" aria-selected="false">Computer Studies</option>
+                <option value="design-and-visual-arts" aria-selected="false">Design and Visual Arts</option>
+                <option value="engineering-and-environmental-technologies" aria-selected="false">Eng. and Env. Technology</option>
+                <option value="health-wellness-and-sciences" aria-selected="false">Health, Wellness and Sciences</option>
+                <option value="hospitality-tourism-and-recreation" aria-selected="false">Hospitality, Tourism and Rec.</option>
+                <option value="human-services" aria-selected="false">Human Services</option>
+                <option value="indigenous-studies" aria-selected="false">Indigenous Studies</option>
+                <option value="liberal-arts" aria-selected="false">Liberal Arts</option>
+                <option value="marine-studies" aria-selected="false">Marine Studies</option>
+                <option value="skilled-trades" aria-selected="false">Skilled Trades</option>
             </select>
-            <button id="areaBtn" class="btn-lp green-back blue-back-hover white-text col-3">Find</button>
+            <button id="areaBtn" class="btn-lp green-back blue-back-hover white-text col-3" role="button" aria-pressed="false">Find</button>
           </div>
-          <p class="card-text"><a href="https://www.georgiancollege.ca/academics/apprenticeships/">Apprenticeships</a></p>
-          <p class="card-text"><a href="https://www.georgiancollege.ca/academics/degrees/">Degrees</a></p>
+          <p class="card-text"><a href="https://www.georgiancollege.ca/academics/apprenticeships/" role="link">Apprenticeships</a></p>
+          <p class="card-text"><a href="https://www.georgiancollege.ca/academics/degrees/" role="link">Degrees</a></p>
         </div>
       </section>
-      <section class="card">
+      <section class="card" aria-labelledby="partTimeTitle">
         <div class="card-body">
           <h3 class="card-title">
-            <a class="btn-lg btn-lp btn-block blue-back green-back-hover white-text" href="https://www.georgiancollege.ca/academics/part-time-studies/">Part-Time Studies</a>
+            <a id="partTimeTitle" class="btn-lg btn-lp btn-block blue-back green-back-hover white-text" href="https://www.georgiancollege.ca/academics/part-time-studies/" role="link">Part-Time Studies</a>
           </h3>
-          <p class="card-text"><a href="https://www.georgiancollege.ca/academics/part-time-studies/certificates-and-programs/">Part-Time Programs</a></p>
-          <p class="card-text"><a href="https://www.georgiancollege.ca/academics/part-time-studies/online-learning/">Online Learning</a></p>
-          <p class="card-text"><a href="https://www.georgiancollege.ca/corporate-training/">Corporate Training</a></p>
+          <p class="card-text"><a href="https://www.georgiancollege.ca/academics/part-time-studies/certificates-and-programs/" role="link">Part-Time Programs</a></p>
+          <p class="card-text"><a href="https://www.georgiancollege.ca/academics/part-time-studies/online-learning/" role="link">Online Learning</a></p>
+          <p class="card-text"><a href="https://www.georgiancollege.ca/corporate-training/" role="link">Corporate Training</a></p>
         </div>
       </section>
-      <section class="card">
+      <section class="card" aria-labelledby="internationalStudentsTitle">
         <div class="card-body">
           <h3 class="card-title">
-            <a class="btn-lg btn-lp btn-block blue-back green-back-hover white-text" href="https://www.georgiancollege.ca/international/">International Students</a>
+            <a id="internationalStudentsTitle" class="btn-lg btn-lp btn-block blue-back green-back-hover white-text" href="https://www.georgiancollege.ca/international/" role="link">International Students</a>
           </h3>
-          <p class="card-text"><a href="https://www.georgiancollege.ca/academics/part-time-studies/certificates-and-programs/">Part-Time Programs</a></p>
+          <p class="card-text"><a href="https://www.georgiancollege.ca/academics/part-time-studies/certificates-and-programs/" role="link">Part-Time Programs</a></p>
         </div>
       </section>
     </div>
